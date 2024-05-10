@@ -1,0 +1,1 @@
+Git does not empty folders that why i have created this file which will be deleted later !
