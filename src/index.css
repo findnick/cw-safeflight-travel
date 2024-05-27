@@ -1,68 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --primary-500: #0062e3;
+  --primary-300: #4d91eb;
+  --primary-100: #cce0f9;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --text: #060000;
+  --text-100: #919191;
+  --stroke-tb: #74777d;
+  --stroke-100: #dedede;
+  -storke-200: #d7e2ee;
+
+  --bg-card: linear-gradient(#ffffff, #97bae7);
+  --bg: #fafbfc;
+  --bg-light: #eff4f9;
+
+  --neutral: #1f2223;
+
+  --white: #ffffff;
+  --blue: #4d94ff;
+  --orange: #ff7c43;
+  --red: #f93e3e;
+  --green: #13b013;
+
+  --light-orange: #fff5ef;
+  --light-purple: #eeeefb;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.playfair {
+  font-family: "Playfair Display", serif !important;
+  font-optical-sizing: auto;
 }
 
 h1 {
+  font-family: "Merriweather", serif;
   font-size: 3.2em;
+  font-weight: 700;
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+h2 {
+  font-family: "Merriweather", serif;
+  font-size: 2.25em !important;
+  font-weight: 700 !important;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.main-heading {
+  font-family: "Merriweather", serif;
+}
+
+h6 {
+  font-size: 0.875em !important;
+  font-weight: 500 !important;
+  color: var(--stroke-tb);
+}
+
+p {
+  font-size: 1.125em;
+  color: var(--stroke-tb);
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button:active {
+  background: var(--primary-300) !important;
+}
+
+.footer {
+  background-color: #07072c;
+  color: var(--white) !important;
+}
+
+.footer-para {
+  color: var(--stroke-tb) !important;
+}
+
+.footer-divider {
+  color: var(--text-100) !important;
 }
